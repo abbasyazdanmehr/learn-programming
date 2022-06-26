@@ -1,0 +1,49 @@
+
+ file(text , binary)
+    1-STORE NUMBERE     12345 : (text: 5 byte )     (binary : 4 byte)
+    
+    2-END OF FILE       (text : 1A  OR 26)          (binary : ctrl+z  EOF)
+    
+    3-END OF LINE       (CR/LF)
+
+
+file :
+	  1- sequential 
+	  2- random
+
+open:	
+   
+   ifstream  f1;   
+   f1.open("a.dat" , ios :: in );
+   
+   ifstream  f1("a.dat" , ios :: in );
+   
+   ofstream  f2;
+   f2.open("a.dat" , ios :: out);
+   
+   
+   fstream   f3; 
+   f3.open("a.dat" , ios :: in | ios :: out);
+   
+   fstream f3("a.dat" , ios :: in | ios :: out);
+   
+   
+   ios :: in
+   ios :: out
+   ios :: app
+   ios :: ate 
+   ios :: binary
+   ios :: trunc
+   
+   f1.close();
+   
+   bool  eof();
+   
+   
+   
+
+
+
+
+
+
